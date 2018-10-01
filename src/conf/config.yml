@@ -1,0 +1,16 @@
+source:
+  host: localhost
+  port: 5433
+  username: postgres
+  password: test
+  database: postgres
+destination:
+  ssh:
+    host: odoo10.techspawn.net
+    user: ubuntu
+    pkey: /Users/pawan/techadmin.pem
+  db:
+    user: odoo10
+    password: odoo10
+    database: delmar_pawan
+    schema: public
