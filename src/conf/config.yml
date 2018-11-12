@@ -1,16 +1,17 @@
 source:
-  host: localhost
-  port: 5433
-  username: postgres
-  password: test
-  database: postgres
+  host: 192.168.109.12
+  port: 5432
+  username: openerp
+  password: A6eC9qf0AenECZdh
+  database: Portal_prod
+  batch: 10000
 destination:
   ssh:
-    host: odoo10.techspawn.net
+    host: 52.60.113.32
     user: ubuntu
-    pkey: /Users/pawan/techadmin.pem
+    pkey: /conf/delmar_aws_key.pem
   db:
-    user: odoo10
-    password: odoo10
-    database: delmar_pawan
+    user: odoo
+    password: odoo
+    database: delmar-final-import-test
     schema: public
